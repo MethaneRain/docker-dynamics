@@ -7,18 +7,21 @@
 
 #docker rm $(docker ps -aq)
 
+# Check the current running images
 docker images
 #docker rmi $(docker images -q)
 
 
 time docker build -t dynamics .
 
+# Check the images again to make sure our build went without error
 docker images
 
 #args=("$@")
 #echo "First->"  ${args[0]}
 
-read -p "tag ID: "  tagID
+read -p "Enter tag ID from the docker images command: "  tagID
+echo ""
 echo "tag ID: $tagID"
 docker tag $tagID methanerain/dynamics:latest
 
