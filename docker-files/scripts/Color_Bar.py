@@ -1,15 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[5]:
-
-
 import numpy as np
 from matplotlib.colors import LinearSegmentedColormap
-
-
-# In[6]:
-
 
 def create_colormap(colors, position=None, bit=False, reverse=False, name='custom_colormap'):
     """
@@ -58,10 +51,3 @@ def create_colormap(colors, position=None, bit=False, reverse=False, name='custo
         cdict['green'].append((pos, color[1], color[1]))
         cdict['blue'].append((pos, color[2], color[2]))
     return LinearSegmentedColormap(name, cdict, 256)
-
-
-# In[ ]:
-
-
-
-
