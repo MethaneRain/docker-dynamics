@@ -26,9 +26,3 @@ echo "tag ID: $tagID"
 docker tag $tagID methanerain/dynamics:latest
 
 docker push methanerain/dynamics
-echo "Done. Now copy and paste the two lines below to access the jupyter notebooks!"
-echo "** copy everything after the '\$' **"
-
-echo "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-echo "run: \$docker run -it --rm -p 8888:8888 methanerain/dynamics:latest bash"
-echo "then run: \$jupyter notebook --ip=0.0.0.0 --no-browser --allow-root"
