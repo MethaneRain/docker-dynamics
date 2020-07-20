@@ -12,7 +12,7 @@ docker images
 #docker rmi $(docker images -q)
 
 
-time docker build -t dynamics .
+time docker build -t methanerain/dynamics .
 
 # Check the images again to make sure our build went without error
 docker images
