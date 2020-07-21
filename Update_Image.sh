@@ -25,4 +25,4 @@ echo ""
 echo "tag ID: $tagID"
 docker tag $tagID methanerain/dynamics:latest
 
-time docker push methanerain/dynamics
+time docker push methanerain/dynamics:latest
